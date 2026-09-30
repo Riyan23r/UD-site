@@ -1,6 +1,6 @@
 {
-  "name": "UD-site",
-  "short_name": "UD-site",
+  "name": "United Dreams",
+  "short_name": "UD",
   "description": "UD-site",
   "start_url": "./",
   "scope": "./",
