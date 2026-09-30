@@ -2,6 +2,12 @@
 <html>
 <head>
 <title>United Dreams Website</title>
+
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#2196F3">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="UD-site">
 <style>
 body{
 background-color:#0E52B8;
@@ -122,5 +128,15 @@ padding:20px;
 <li>A Gym</li>
 <li>A Ganesha Temple</li>
 </ol>
+
+    <script>
+if ("serviceWorker" in navigator) {
+    window.addEventListener("load", () => {
+        navigator.serviceWorker.register("./service-worker.js")
+            .then(() => console.log("UD-site PWA ready!"))
+            .catch(error => console.error("Service Worker error:", error));
+    });
+}
+    </script>
 </body>
 </html>
