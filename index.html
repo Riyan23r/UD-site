@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>United Dreams Website</title>
+<title>United Dreams</title>
 
 <link rel="icon" type="image/jpeg" href="UD.jpeg">
 <link rel="manifest" href="manifest.json">
@@ -79,11 +79,19 @@ padding:20px;
     border-radius: 10px;
     font-size: 20px;
     text- align:centre;
+
+#foot{
+    color: #4F96A3;
+    font-size: 20px;
+    height: 50px;
+    align-items: center;
+}
+
 }
 </style>
 </head>
 <body>
-<h1>United Dreams Website</h1>
+<h1>United Dreams</h1>
 <br>
 <br>
 <hr>
@@ -117,7 +125,7 @@ padding:20px;
 <hr>
 <br>
 <br>
-<h2 id = "WCUD">Why coose United Dreams?:</h2>
+<h2 id = "WCUD">Why choose United Dreams?:</h2>
 <h2 id = "WCUDB">Because we have:</h2>
 <ol id = "WCUDA">
 <li>A Party Hall</li>
@@ -130,7 +138,9 @@ padding:20px;
 <li>A Ganesha Temple</li>
 </ol>
 
-    <script>
+<footer id = "foot">United Dreams ● Aparment Complex</footer>
+
+<script>
 if ("serviceWorker" in navigator) {
     window.addEventListener("load", () => {
         navigator.serviceWorker.register("./service-worker.js")
